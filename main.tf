@@ -1,15 +1,15 @@
 provider "aws" {
-  region     = "us-east-1"
-  access_key = "AKIATEO6SWFRFBXV3UEY"
-  secret_key = "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"
+  region     = var.region
+  access_key = var.access_key
+  secret_key = var.secret_key
 }
 
 
 resource "aws_instance" "myec1" {
-  ami           = "ami-0dfcb1ef8550277af"
-  instance_type = "t2.micro"
+  ami           = var.ami
+  instance_type = var.instance_type
 }
 
-output "fetched_info_from_aws" {
+output "Metadata_of_aws_instance" {
   value = aws_instance.myec1
 }
