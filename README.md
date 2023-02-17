@@ -6,5 +6,7 @@ Solution: Terraform script will create an AWS instance and return AWS instance M
 Commands to execute:
 
 Terraform init
+
 Terraform plan
+
 Terraform apply
