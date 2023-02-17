@@ -10,3 +10,8 @@ Terraform init
 Terraform plan
 
 Terraform apply
+
+
+#We can also get the metadata of AWS instance from state file 
+
+terraform state show aws_instance.myec1
